@@ -4,6 +4,8 @@
 
 このプロジェクトは、MPU6050センサーとPID制御アルゴリズムを使用して自動的にバランスを維持するセルフバランシングバイクです。スマートフォンアプリからのリモート制御にも対応しており、ステアリングと速度を制御できます。
 
+> **元のプロジェクト**: このプロジェクトのArduinoコードは、[remrc/Self-Balancing-Bike](https://github.com/remrc/Self-Balancing-Bike) を基にしています。
+
 ## 主な特徴
 
 - **自動バランス制御**: MPU6050センサーと補完フィルタによる高精度な角度検出
@@ -226,7 +228,13 @@ PWM = K1 × robot_angle + K2 × gyroXfilt + K3 × motor_speed + K4 × motor_pos
 
 ## 謝辞
 
-このプロジェクトは、MPU6050センサーとPID制御を使用したセルフバランシングロボットの技術を基に開発されています。
+このプロジェクトのArduinoコードは、以下のオープンソースプロジェクトを基にしています：
+
+- **[remrc/Self-Balancing-Bike](https://github.com/remrc/Self-Balancing-Bike)** - 元のセルフバランシングバイクプロジェクト
+  - Arduino Nano、Nidec 24Hモーター、MPU6050を使用したセルフバランシングバイク
+  - Bluetooth経由でのリモート制御とPIDパラメータ調整機能
+
+元の開発者である[remrc](https://github.com/remrc)氏に感謝いたします。
 
 ---
 
